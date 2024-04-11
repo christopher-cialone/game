@@ -11,7 +11,14 @@ enum Gem {
 
 impl fmt::Display for Gem {
     fn fmt(&self, f: &mut fmt::Formatter ) -> fmt::Result {
-        write!(f, "test")
+        match self {
+            Gem::Diamond => write!(f, "Diamond"),
+            Gem::Sapphire => write!(f, "Sapphire"),
+            Gem::Ruby => write!(f, "Ruby"),
+            Gem::Topaz => write!(f, "Jade"),
+            Gem::Onyx => write!(f, "Onyx"),
+            Gem::Jade => write!(f, "Jade"),
+        }
 
     }
     
