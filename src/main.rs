@@ -27,6 +27,16 @@ fn main() {
     println!("{map:?}");
 
     map[4][2] = true;
+    map[1][2] = true;
+    map[3][3] = true;
+    map[0][2] = true;
+    map[1][4] = true;
+
+    println!("{map:?}");
+
+    for row in map{
+        println!("{row:}");
+    }
 
     // let gems = [
     //     (Gem::Onyx, 25.00),
